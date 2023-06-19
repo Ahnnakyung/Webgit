@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>Details</title>
+   <style>
+      header {
+           height: 70px;
+           padding: 1rem;
+           color: black;
+           background: white;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+      }
+      h1 {
+         font-size: 20px;
+         font-weight: normal;
+         margin-left: 20px;
+         color: black;
+      }
+      a {
+         text-decoration: none;
+         color: black;
+      }
+      span {
+         margin-left: 16px;
+         margin-right: 16px;
+      }
+      .container {
+         display: flex;
+         align-items: flex-start;
+         background-color: #EFEFEF;
+         width: 100%;
+         height: 80px;
+      }
+      h2 {
+         font-size: 16px;
+         font-weight: normal;
+         margin-left: 20px;
+         margin-top: 20px;
+      }
+      
+      .content{
+          max-width: 1280px;
+      }
+      .flexbox{
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1em;
+      }   
+      .item1{
+          min-height: 700px;
+          flex-basis: 800px;
+          flex-grow: 1;
+          background-color: white;
+      }
+      .item2{
+          min-height: 300px;
+          flex-basis: 400px;
+          flex-grow: 1;
+          background-color: white;
+      }
+      .item3{
+          min-height: 500px;
+          flex-basis: 800px;
+          flex-grow: 1;
+          background-color: white;
+      }
+      .item4{
+          min-height: 300px;
+          flex-basis: 400px;
+          flex-grow: 1;
+          background-color: white;
+      }
+      img {
+         width: 750px;
+         height: 400px;
+         margin-left: 50px;
+         margin-top: 50px;
+         margin-bottom: 10px;
+      }
+      h3 {
+         margin-left: 50px;
+         margin-top: 0;
+         margin-bottom: 10px;
+      }
+      h4 {
+         margin-left: 50px;
+         font-weight: normal;
+         color: #9A9A9A;
+         margin-top: 0;
+         margin-bottom: 10px;
+      }
+      p {
+         margin-left: 50px;
+         color: #9A9A9A;
+         margin-top: 0;
+      }
+      .gray {
+         color: gray;
+      }
+      .black {
+         color: black;
+      }
+      h5 {
+  	 	margin-left: 50px;
+   		margin-top: 0;
+   		margin-bottom: 50px;
+   		font-size: 20px;
+		}
+      h6 {
+		color: #484848;
+   		font-size: 30px;
+   		margin-left: 50px;
+   		margin-bottom: 20px;
+   		margin-top: 0;
+   		line-height: 1;
+	}
+      .box {
+         background-color: #EBEBEB;
+         width: 750px;
+         height: 250px;
+         border-radius: 10px;
+         margin-left: 50px;
+         margin-top: 0;
+      }
+      .f {
+         color: black;
+      }
+      h2.a {
+         margin-top: 50px;
+         color: black;
+      }
+      p.a {
+         margin-left: 20px;
+         color: #bcbcbc;
+      }
+         h2.a:after {
+           content: "";
+           display: block;
+           width: 300px;
+           margin: 50px 0px;
+           margin-bottom: 15px;
+           text-align: center;
+         }
+         p.a:after {
+           content: "";
+           display: block;
+           width: 300px;
+           border-bottom: 1px solid #bcbcbc;
+           margin: 20px 0px;
+           margin-bottom: 20px;
+         }
+         .item2 a{
+            color: #bcbcbc;
+         }
+         .item4 a {
+            color: #bcbcbc;
+         }
+         .message_area {
+         	width: 740px;
+         	height: 250px;
+         	background-color: #EBEBEB;
+         	border: 0px solid white;
+         	border-radius: 10px;
+         }
+         .submit {
+         	background-color: white;
+         	border: 0px solid white;
+         }
+         span:hover a {
+		color: black;
+		text-decoration: underline;
+		}
+   </style>
+</head>
+<body>
+   <header>
+      <h1><a href="home.html">Demo Logo</a></h1>
+      <nav>
+         <span><a href="lodging.html">예약</a></span>
+         <span><a href="readmore.html">안내</a></span>
+         <span><a href="login.html">로그인</a></span>
+         <span><a href="mypage.html">마이페이지</a></span>
+         <span><a href="likes.html">Likes</a></span>
+      </nav>
+   </header>
+   <div class="container">
+      <h2><b>숙소 이름</b></h2>
+   </div>
+   
+   <section class="content">
+        <div class="flexbox">
+          <div class="item1">
+             <img src="img.jpg">
+             <h3>숙소 이름</h3>
+             <h4><a class="gray" href="#">서울특별시 어쩌구 숙소 위치 </a> <a class="black" href="#"><b> | </b> 호스트</a></h4>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci neque, facere autem quis iusto recusandae culpa debitis vel corporis molestiae architecto animi. Accusantium quis blanditiis dolorum qui quae quibusdam porro natus magni eaque debitis? Eius velit quod illo doloribus odit repudiandae autem. Tempora maiores dolorum aliquam sit fugiat, labore facere obcaecati laborum esse natus blanditiis molestiae! Natus expedita molestiae culpa ipsa omnis explicabo iure accusantium, reprehenderit ab doloremque! Vero, quis maiores eveniet nulla labore iste consectetur veritatis vitae, repudiandae unde a reprehenderit? Facilis, quas placeat pariatur quos fugiat, repudiandae officiis consequatur ipsum excepturi facere animi? Ipsum soluta nostrum corrupti provident?</p>
+          
+          </div>
+          <div class="item2">
+             <h2 class="a"><b>최근 본 상품</b></h2>
+             <p class="a"><a href="#">롯데 시그니엘</a></p>
+             <p class="a"><a href="#">신라호텔</a></p>
+             <p class="a"><a href="#">힐튼호텔</a></p>
+             <p class="a"><a href="#">호텔 엠베스더</a></p>
+          </div>
+          <div class="item3">
+             <h5>평가 및 리뷰</h5>
+             <h6>4.5</h6>
+             <p><b>(최고 5점)</b></p>
+             <div class="box">
+                <form action="#" method="get">
+               		<textarea class="message_area" cols="100" rows="20"></textarea><br>
+              		<input type="submit" value="리뷰 작성">&nbsp;
+                </form>
+             </div>
+          </div>
+          <div class="item4">
+             <h2 class="a"><b>카테고리</b></h2>
+             <p class="a"><a href="#">Lorem ipsum dolor sit amet,</a></p>
+             <p class="a"><a href="#">Lorem ipsum dolor sit amet,</a></p>
+             <p class="a"><a href="#">Lorem ipsum dolor sit amet,</a></p>
+             <p class="a"><a href="#">Lorem ipsum dolor sit amet,</a></p>
+          </div>
+        </div>
+   </section>
+</body>
+</html>

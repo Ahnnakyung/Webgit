@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<style>
+		header {
+  			height: 70px;
+  			padding: 1rem;
+  			color: black;
+  			background: white;
+  			display: flex;
+  			justify-content: space-between;
+  			align-items: center;
+		}
+		h1 {
+			font-size: 20px;
+			font-weight: normal;
+			margin-left: 20px;
+			color: black;
+		}
+		a {
+			text-decoration: none;
+			color: black;
+		}
+		span {
+		margin-left: 16px;
+		margin-right: 16px;
+		}
+  		.main-image {
+  			position: relative;
+		}
+		.text {
+  			text-align: center;
+  			position: absolute;
+  			top: 50%;
+  			left: 50%;
+  			transform: translate(-50%, -50%);
+		}
+		h2 {
+			color: white;
+			font-size: 100px;
+			margin-bottom: 0;
+			font-weight: normal;
+			margin-top: 30px;
+		}
+		p {
+			color: white;	
+			margin-top: 0;
+		}
+  		.readmore {
+			background-color:#FFD4E6;
+			display:inline-block;
+			cursor:pointer;
+			color: white;
+			font-family:Arial;
+			font-size:16px;
+			padding:9px 23px;
+			text-decoration:none;
+		}
+		.readmore:hover {
+			background-color:#FFD4E6;
+		}
+		.readmore:active {
+			position:relative;
+			top:1px;
+		}
+		.reservation {
+			display:inline-block;
+			cursor:pointer;
+			color: white;
+			font-family:Arial;
+			font-size:16px;
+			padding:9px 23px;
+			text-decoration:none;
+			border:3px solid white;
+		}
+		.reservation:active {
+			position:relative;
+			top:3px;
+		}
+		span:hover a {
+		color: black;
+		text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<header>
+  		<h1><a href="home.html">Demo Logo</a></h1>
+  		<nav>
+    		<span><a href="lodging.html">예약</a></span>
+    		<span><a href="readmore.html">안내</a></span>
+    		<span><a href="login.html">로그인</a></span>
+    		<span><a href="mypage.html">마이페이지</a></span>
+    		<span><a href="likes.html">Likes</a></span>
+  		</nav>
+	</header>
+	<div class="main-image">
+		<img src="img.jpg" width="100%" height="480px" alt="image">
+  		<div class="text">
+    		<h2>Sookso</h2>
+    		<p><b>한국의 호텔, 모텔, 펜션 등 놀이와 레저, 생활, 숙박에 필요한 정보를 제공하는 기업</b></p>
+    		<br><br>
+			<a href="readmore.html" class="readmore">Read more</a>   <a href="lodging.html" class="reservation">Reservation</a>
+		</div>
+	</div>
+</body>
+</html>

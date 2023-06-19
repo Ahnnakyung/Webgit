@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>MembershipRegister</title>
+   <style>
+       header {
+           height: 70px;
+           padding: 1rem;
+           color: black;
+           background: white;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+      }
+      h1 {
+         font-size: 20px;
+         font-weight: normal;
+         margin-left: 20px;
+         color: black;
+      }
+      a {
+         text-decoration: none;
+         color: black;
+      }
+      span {
+         margin-left: 16px;
+         margin-right: 16px;
+      }
+      h2 {
+         color: #939393;
+         margin-top: 20px;
+         margin-left: 70px;
+         font-weight: normal;
+         font-size: 16px;
+      }
+      p {
+         color: #939393;
+         margin-left: 70px;
+      }
+         h2.a:after {
+           content: "";
+           display: block;
+           width: 400px;
+           border-bottom: 1px solid #bcbcbc;
+           margin: 5px 0px;
+           margin-bottom: 15px;
+         }
+         p.a:after {
+           content: "";
+           display: block;
+           width: 400px;
+           border-bottom: 1px solid #bcbcbc;
+           margin: 5px 0px;
+           margin-bottom: 15px;
+         }
+         .login {
+         display:inline-block;
+         cursor:pointer;
+         color: white;
+         font-family:Arial;
+         font-size:16px;
+         padding:6px 23px;
+         text-decoration:none;
+         border:1px solid white;
+         background-color: black;
+         margin-top: 20px;
+         margin-bottom: 0px;
+         margin-left: 600px;
+      }
+      .login:active {
+         position:relative;
+         top:1px;
+      }
+      
+      input[type="text"],
+      input[type="password"],
+      input[type="email"] {
+         border: none;
+      }
+      span:hover a {
+		color: black;
+		text-decoration: underline;
+		}
+   </style>
+</head>
+<body>
+   <header>
+       <h1><a href="home.html">Demo Logo</a></h1>
+      <nav>
+         <span><a href="lodging.html">예약</a></span>
+         <span><a href="readmore.html">안내</a></span>
+         <span><a href="login.html">로그인</a></span>
+         <span><a href="mypage.html">마이페이지</a></span>
+         <span><a href="likes.html">Likes</a></span>
+      </nav>
+   </header>
+      
+  
+   <form action="login.html" method="post">
+      <p class="a">
+         이름: <br><br>
+         <input type="text" name="name" required>
+      </p>
+      <p class="a">
+         아이디: <br><br>
+         <input type="text" name="username" required>
+      </p>
+      <p class="a">
+         비밀번호: <br><br>
+         <input type="password" name="password" required>
+      </p>
+      <p class="a">
+         전화번호: <br><br>
+         <input type="text" name="phone" required>
+      </p>
+      <p class="a">
+         이메일: <br><br>
+         <input type="email" name="email" required>
+      </p>
+      <input type="submit" value="회원가입" class="login">
+   </form>
+      String name = request.getParameter("name");
+      String username = request.getParameter("username");
+      String password = request.getParameter("password");
+      String phone = request.getParameter("phone");
+      String email = request.getParameter("email");
+
+      Connection conn = null;
+      PreparedStatement pstmt = null;
+
+      try {
+         Class.forName("com.mysql.jdbc.Driver");
+         conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "username", "password"); // 데이터베이스 정보와 인증 정보를 적절히 수정해주세요.
+
+         String sql = "INSERT INTO members (name, username, password, phone, email) VALUES (?, ?, ?, ?, ?)";
+         pstmt = conn.prepareStatement(sql);
+         pstmt.setString(1, name);
+         pstmt.setString(2, username);
+         pstmt.setString(3, password);
+         pstmt.setString(4, phone);
+         pstmt.setString(5, email);
+         pstmt.executeUpdate();
+      } catch (ClassNotFoundException e) {
+         e.printStackTrace();
+      } catch (SQLException e) {
+         e.printStackTrace();
+      } finally {
+         try {
+            if (pstmt != null) pstmt.close();
+            if (conn != null) conn.close();
+         } catch (SQLException e) {
+            e.printStackTrace();
+         }
+      }
+</body>
+</html>

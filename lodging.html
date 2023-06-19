@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>Lodging</title>
+   <style>
+      header {
+           height: 70px;
+           padding: 1rem;
+           color: black;
+           background: white;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+      }
+      h1 {
+         font-size: 20px;
+         font-weight: normal;
+         margin-left: 20px;
+         color: black;
+      }
+      a {
+         text-decoration: none;
+         color: black;
+      }
+      span {
+         margin-left: 16px;
+         margin-right: 16px;
+      }
+      .content {
+         margin-left: 20px;
+         overflow: hidden;
+         text-align: center; 
+      }
+      p {
+         color: white;
+         margin-top: 10px;
+         margin-left: 117px;
+         margin-right: 108px;
+         margin-bottom: 45px;
+      }
+      h2 {
+         margin-top: 20px;
+         font-size: 20px;
+         font-weight: normal;
+         margin-left: 117px;
+         margin-right: 108px;
+         color: white;
+      }
+      .container {
+         display: flex;
+         align-items: flex-start;
+         background-color: black;
+         width: 100%;
+         height: 480px;
+         text-align: center;
+      }
+      .content {
+         flex: 1;
+      }
+      .image {
+           display: flex;
+           justify-content: center;
+           flex-wrap: wrap;
+      }
+      .container img {
+           width: 270px;
+           height: 290px;
+           margin: 10px;
+           margin-top: 10px;
+      }
+      span:hover a {
+		color: black;
+		text-decoration: underline;
+		}
+   </style>
+</head>
+<body>
+   <header>
+      <h1><a href="home.html">Demo Logo</a></h1>
+      <nav>
+         <span><a href="lodging.html">예약</a></span>
+         <span><a href="readmore.html">안내</a></span>
+         <span><a href="login.html">로그인</a></span>
+         <span><a href="mypage.html">마이페이지</a></span>
+         <span><a href="likes.html">Likes</a></span>
+      </nav>
+   </header>
+   <div class="container">
+      <div class="content">
+         <h2>숙소선택</h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+         <div class="image">
+            <a href="detail.html"><img src="img.jpg"></a>
+            <a href="detail.html"><img src="img.jpg"></a>
+            <a href="detail.html"><img src="img.jpg"></a>
+            <a href="detail.html"><img src="img.jpg"></a>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

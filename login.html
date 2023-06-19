@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<style>
+		header {
+  			height: 70px;
+  			padding: 1rem;
+  			color: black;
+  			background: white;
+  			display: flex;
+  			justify-content: space-between;
+  			align-items: center;
+		}
+		h1 {
+			font-size: 20px;
+			font-weight: normal;
+			margin-left: 20px;
+			color: black;
+		}
+		a {
+			text-decoration: none;
+			color: black;
+		}
+		span {
+			margin-left: 16px;
+			margin-right: 16px;
+		}
+		.container {
+			display: flex;
+			align-items: flex-start;
+			background-color: white;
+			width: 100%;
+			height: 30px;
+		}
+		.container-sm {
+			background-color: white;
+			width: 100%;
+			height: 40px;
+		}
+		.container-md {
+			background-color: white;
+			width: 100%;
+			height: 345px;
+			text-align: center;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+		.child {
+			color: black;
+			width : 100%;
+  			height : 345px;
+  			background-color: white;
+  			position: absolute;
+  			margin-top: 0;
+  			
+		}
+		h2 {
+			color: black;
+			font-size: 100px;
+			margin-bottom: 0;
+			font-weight: normal;
+			margin-top: 32px;
+		}
+		p {
+			color: black;
+			font-size: 16px;
+		}
+		.login {
+			display:inline-block;
+			cursor:pointer;
+			color: white;
+			font-family:Arial;
+			font-size:16px;
+			padding:6px 23px;
+			text-decoration:none;
+			border:1px solid white;
+			background-color: black;
+			margin-top: 20px;
+			margin-bottom: 0px;
+		}
+		.login a {
+			color: white;
+		}
+		.login:active {
+			position:relative;
+			top:1px;
+		}
+		.p2 {
+			color: black;
+			margin-top: 0;
+			font-size: 16px;
+		}
+		span:hover a {
+		color: black;
+		text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1><a href="home.html">Demo Logo</a></h1>
+		<nav>
+			<span><a href="lodging.html">예약</a></span>
+			<span><a href="readmore.html">안내</a></span>
+			<span><a href="login.html">로그인</a></span>
+			<span><a href="mypage.html">마이페이지</a></span>
+			<span><a href="likes.html">Likes</a></span>
+		</nav>
+	</header>
+	<div class="container"></div>
+	<div class="container-sm"></div>
+	<div class="container-md">
+		<div class="child">
+			<h2>로그인</h2>
+			<p>더 예쁜 숙소 구경 및 예약, 자세한 사항 확인을 위해서는 로그인 절차를 거쳐야 합니다</p>
+			<a href="loginRegister.html" class="login">로그인</a><br><br>
+			<p class="p2">가입이 안돼있다면? <b><a href="membership.html">회원가입하기 ></a></b></p>
+		</div>
+	</div>
+</body>
+</html>
